@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const port = process.env.PORT || 8080;
-
+const connection = require('./db')
 // Parse JSON bodies for POST requests
 app.use(express.json());
 app.use(cors());
